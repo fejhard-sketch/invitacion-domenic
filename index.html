@@ -356,6 +356,23 @@
     margin-bottom: 2px;
   }
 
+  .mapa-link{
+    color: var(--marfil);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--oro-rosa);
+    padding-bottom: 1px;
+    transition: color .3s ease, border-color .3s ease;
+    display: inline;
+  }
+  .mapa-link:hover, .mapa-link:active{
+    color: var(--oro-rosa-claro);
+    border-color: var(--oro-rosa-claro);
+  }
+  .mapa-icon{
+    margin-left: 4px;
+    font-size: 14px;
+  }
+
   /* ---------- FOTO ---------- */
   .foto-frame{
     width: 128px; height: 128px;
@@ -443,7 +460,7 @@
     </div>
 
     <div class="detalles">
-      <div class="detalle-item"><b>Lugar</b>Leo's Grill — 9 de Octubre y Rafael María Moya</div>
+      <div class="detalle-item"><b>Lugar</b><a href="https://maps.app.goo.gl/4RwtGGfK7bqsB4u87" target="_blank" rel="noopener noreferrer" class="mapa-link">Leo's Grill — 9 de Octubre y Rafael María Moya<span class="mapa-icon">📍</span></a></div>
       <div class="detalle-item"><b>Fecha</b>25 de julio de 2026</div>
       <div class="detalle-item"><b>Hora</b>19:00</div>
     </div>
