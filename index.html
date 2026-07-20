@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -159,14 +158,14 @@
   .tap-hint span{
     display: inline-block;
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: var(--vino-oscuro);
     text-transform: uppercase;
     background: linear-gradient(135deg, var(--oro-rosa-claro), var(--oro-rosa));
-    padding: 8px 22px;
-    border-radius: 30px;
+    padding: 6px 16px;
+    border-radius: 24px;
     box-shadow: 0 0 0 1px rgba(255,255,255,.35) inset, 0 6px 18px rgba(0,0,0,.4), 0 0 22px 2px rgba(217,166,121,.55);
     animation: pulseHint 1.6s ease-in-out infinite;
   }
@@ -419,18 +418,32 @@
 
   .nota-obsequio{
     margin-top: 8px;
-    padding: 10px 14px;
+    padding: 8px 12px;
     border: 1px solid var(--oro-rosa);
     border-radius: 10px;
     background: rgba(217,166,121,.14);
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 600;
-    letter-spacing: .5px;
+    letter-spacing: .4px;
     line-height: 1.35;
     font-style: normal;
     color: var(--oro-rosa-claro);
     text-shadow: 0 0 12px rgba(217,166,121,.55);
+  }
+
+  @media (max-width: 480px){
+    body{ padding: 16px; }
+    .stage{ max-width: 92vw; }
+    .card-overlay{ width: min(90vw, 340px); top: 50%; }
+    .card{ padding: 26px 16px 22px; }
+    .titulo-invitacion{ font-size: 34px; }
+    .nombre-graduada{ font-size: 20px; }
+    .foto-frame{ width: 108px; height: 108px; }
+    .texto-intro{ font-size: 15px; }
+    .detalle-item{ font-size: 14px; }
+    .tap-hint span{ font-size: 12.5px; padding: 5px 14px; }
+    .nota-obsequio{ font-size: 12px; }
   }
 
   @media (prefers-reduced-motion: reduce){
